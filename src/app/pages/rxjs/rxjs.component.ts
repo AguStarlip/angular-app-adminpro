@@ -23,7 +23,7 @@ export class RxjsComponent implements OnDestroy{
     ); */
 
     this.intervalSubs = this.returnInterval().subscribe( console.log );
-
+    
   }
 
   ngOnDestroy(): void {
@@ -37,11 +37,9 @@ export class RxjsComponent implements OnDestroy{
 
     return interval(500)
               .pipe(
-                /* take(10), */
                 map(valor => valor + 1 ),
                 filter(valor => (valor % 2 === 0) ? true : false )
               );
-
   }
 
   // Rxjs con intervalo old

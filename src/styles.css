@@ -5,6 +5,14 @@
     animation-fill-mode: both
 }
 
-#themecolors .selector {
-    cursor: pointer;
+#themecolors .selector,
+.cursor {
+    cursor: pointer !important;
+}
+
+#google-btn {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
