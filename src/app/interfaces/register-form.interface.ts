@@ -5,4 +5,5 @@ export interface RegisterForm{
     password: string;
     password2: string;
     teminos: boolean;
+    rol: string;
 }
