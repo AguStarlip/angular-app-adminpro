@@ -16,6 +16,10 @@ export class Usuario{
 
     get imagenUrl(){
 
+        if(!this.img){
+            return `${base_url}/upload/usuarios/no-image.jpg`;
+        }
+
         // Validar img usuario de google
         if(this.img.includes('https')){
             return this.img;
