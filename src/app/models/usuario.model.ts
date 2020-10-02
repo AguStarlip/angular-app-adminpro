@@ -18,18 +18,14 @@ export class Usuario{
 
         if(!this.img){
             return `${base_url}/upload/usuarios/no-image.jpg`;
-        }
-
-        // Validar img usuario de google
-        if(this.img.includes('https')){
+        }else if(this.img.includes('https')){
             return this.img;
+        }else if(this.img){
+            return `${base_url}/upload/usuarios/${this.img}`;
+        }else{
+            return `${base_url}/upload/usuarios/no-image.jpg`;
         }
 
-        // Validar img usuario del servidor
-        if(this.img){
-            return `${base_url}/upload/usuarios/${this.img}`;
-        }
-        return `${base_url}/upload/usuarios/no-image.jpg`;
     }
 
 }
