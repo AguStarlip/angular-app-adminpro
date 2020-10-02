@@ -38,8 +38,8 @@ export class MedicoComponent implements OnInit {
 
       this.hospitalSeleccionado = this.hospitales.find(h => h._id === hospitalId);
       
-        });
-        
+    });
+
     this.cargarHospitales();
   }
 
@@ -93,7 +93,6 @@ export class MedicoComponent implements OnInit {
             this.router.navigateByUrl(`/dashboard/medico/${resp.medico._id}`)
           });
     }
-
 
   }
 
