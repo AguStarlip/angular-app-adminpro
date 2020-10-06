@@ -73,3 +73,9 @@ Login register and recover password Page
     position: absolute;
     height: 100%;
 }
+
+@media (max-width: 400px) {
+    .mid-center {
+        padding-left: 7%;
+    }
+}
